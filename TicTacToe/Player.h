@@ -3,7 +3,8 @@
 class Player
 {
 public:
-	// Constructors
+#pragma region Constructors & Deconstructors
+
 	Player(std::string name, std::string object)
 	{
 		name = playersName;
@@ -11,10 +12,18 @@ public:
 
 	~Player()
 	{
-		
+
 	}
 
-	// Methods
+
+#pragma endregion
+
+	
+
+#pragma region Methods
+	
+
+
 	void DrawPlayerUI();			// Draws the players UI
 
 	/// <summary>
@@ -23,14 +32,45 @@ public:
 	/// </summary>
 	inline void WonGame() { gamesWon++; }
 
-	// Properties
+
+
+#pragma endregion
+
+#pragma region Abstract Methods
+
+
+	virtual void TakeTurn() = 0;
+
+
+#pragma endregion
+	
+
+	
+
+
+#pragma region Properties
+
+
 	std::string TicTacToeObject;			// Object to add
+
+
+#pragma endregion
+
+	
 protected:
-	// Methods
+#pragma region Methods
 
+#pragma endregion
 
-	// Properties
+#pragma region Properties
+
 	std::string playersName;			// Name of the player
 	int gamesWon = 0;						// How many games the player has won
+
+
+#pragma endregion
+
+
+	
 };
 
