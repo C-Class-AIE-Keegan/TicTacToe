@@ -5,6 +5,8 @@
 ***********/
 
 #include "InGame.h"
+#include "GameManager.h"
+#include <iostream>
 
 InGame::InGame()
 {
@@ -27,6 +29,9 @@ InGame::~InGame()
 void InGame::Draw()
 {
 	__super::Draw();
+	GameManager::GetCurrentMatch()->GetPlayer1()->DrawPlayerUI();
+	GameManager::GetCurrentMatch()->GetPlayer2()->DrawPlayerUI();
+	DrawGrid();
 }
 
 /// <summary>
@@ -78,4 +83,17 @@ bool InGame::ValidatePlacement(int const xPos, int const yPos)
 		}
 	}
 	return false;
+}
+
+/// <summary>
+/// Draws the Tic Tac Toe Grid
+/// </summary>
+void InGame::DrawGrid()
+{
+	std::cout << grid[0][0] << "|" << grid[0][1] << "|" << grid[0][2] << std::endl;
+	std::cout << "--|--|--" << std::endl;
+	std::cout << grid[1][0] << "|" << grid[1][1] << "|" << grid[2][2] << std::endl;
+	std::cout << "--|--|--" << std::endl;
+	std::cout << grid[2][0] << "|" << grid[1][1] << "|" << grid[2][2] << std::endl;
+	std::cout << "--|--|--" << std::endl;
 }

@@ -9,27 +9,51 @@
 class InGame : public GameState
 {
 public:
+#pragma region Constructor & Deconstructor
+
 	// Constructors
 	InGame();
 	~InGame();
 
-	// Methods
+
+#pragma endregion
+
+
+#pragma region Methods
+
+
 	void Draw() override;			// Draws the state
 	void Loop();			// Handles the main loop
 
 	void AddObject(std::string const object, int const xPos, int const yPos);
 
-	// Properties
+#pragma endregion
+
+
+
 protected:
 
 private:
-	// Methods
-	bool ValidatePlacement(int const xPos, int const yPos);		// Ensures the placement is valid
+#pragma region Methods
+
+	bool ValidatePlacement(int const xPos, int const yPos);
+	void DrawGrid();
+
+
+#pragma endregion
+
+#pragma region Properties
+
+
 	int playersTurn = 1;
-
-
-	// Properties
 	std::string grid[3][3];
+
+
+
+#pragma endregion
+
+
+	
 };
 
 
