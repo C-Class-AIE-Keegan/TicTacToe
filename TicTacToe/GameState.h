@@ -9,7 +9,7 @@ public:
 
 	
 	virtual void Draw() { system("cls"); }			// Handles drawing of the game state
-	virtual void Loop() = 0;			// Handles looping of the game state
+	virtual void Loop() { Draw(); }			// Handles looping of the game state
 
 protected:
 
