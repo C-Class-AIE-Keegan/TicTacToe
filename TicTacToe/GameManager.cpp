@@ -9,6 +9,12 @@
 
 // Static Variables declaretion
 GameState* GameManager::currentGameState = new InGame();
+MatchController* GameManager::currentMatch = nullptr;
+
+GameManager::~GameManager()
+{
+	delete GameManager::currentGameState;
+}
 
 /// <summary>
 /// Changes the current game state
