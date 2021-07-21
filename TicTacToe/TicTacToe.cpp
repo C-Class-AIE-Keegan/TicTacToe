@@ -2,9 +2,11 @@
 //
 
 #include <iostream>
+#include "Human.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Human *human = new Human("Hello", "X");
+	human->TakeTurn();
 }
 

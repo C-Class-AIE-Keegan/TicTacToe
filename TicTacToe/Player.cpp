@@ -2,9 +2,6 @@
 #include <iostream>
 
 
-/// <summary>
-/// Prints the players name & how many games they've won
-/// </summary>
 void Player::DrawPlayerUI()
 {
 	std::cout << playersName << ":";			// Print players name

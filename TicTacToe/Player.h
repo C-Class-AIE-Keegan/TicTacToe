@@ -18,6 +18,7 @@ public:
 		isHuman = human;
 	}
 
+	
 	~Player()
 	{
 
