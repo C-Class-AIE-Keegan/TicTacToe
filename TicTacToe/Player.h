@@ -5,9 +5,17 @@ class Player
 public:
 #pragma region Constructors & Deconstructors
 
-	Player(std::string name, std::string object)
+	/// <summary>
+	/// Construtor for the player
+	/// </summary>
+	/// <param name="name">Name of the player</param>
+	/// <param name="object">Tic Tac Toe Object</param>
+	/// <param name="Human">(Default: true)_if this is human or AI</param>
+	Player(std::string name, std::string object, bool human = true)
 	{
 		name = playersName;
+		TicTacToeObject = object;
+		isHuman = human;
 	}
 
 	~Player()
@@ -66,6 +74,7 @@ protected:
 
 	std::string playersName;			// Name of the player
 	int gamesWon = 0;						// How many games the player has won
+	bool isHuman = true;
 
 
 #pragma endregion
