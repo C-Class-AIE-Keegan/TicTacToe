@@ -1,3 +1,9 @@
+/**********
+* Game Manager CPP
+* Handles all the game methods
+* Keegan Miller | AIE | Tic Tac Toe
+***********/
+
 #include "GameManager.h"
 #include "InGame.h"
 

@@ -1,3 +1,8 @@
+/**********
+* In Game Header
+* Game State for when we are playing a match
+* Keegan Miller | AIE | Tic Tac Toe
+***********/
 #pragma once
 #include "GameState.h"
 #include <string>

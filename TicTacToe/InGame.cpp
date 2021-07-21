@@ -1,3 +1,9 @@
+/**********
+* In Game CPP
+* Handles the methods for In Game state
+* Keegan Miller | AIE | Tic Tac Toe
+***********/
+
 #include "InGame.h"
 
 InGame::InGame()

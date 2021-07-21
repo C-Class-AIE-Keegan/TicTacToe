@@ -1,3 +1,8 @@
+/************
+* Game State Header
+* Base Class for all games states
+* Keegan Miller | AIE | Tic Tac Toe
+************/
 #pragma once
 #include <stdlib.h>
 class GameState

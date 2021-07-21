@@ -1,3 +1,9 @@
+/**********
+* Human Header
+* Controller for the human player
+* Keegan Miller | AIE | Tic Tac Toe
+***********/
+
 #pragma once
 #include "Player.h"
 

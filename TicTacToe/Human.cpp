@@ -1,3 +1,9 @@
+/**********
+* Human CPP
+* Handles the players input when it's their turn
+* Keegan Miller | AIE | Tic Tac Toe
+***********/
+
 #include "Human.h"
 #include "InGame.h"
 #include "GameManager.h"

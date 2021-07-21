@@ -1,3 +1,9 @@
+/**********
+* Player Header
+* Abstract class for both human & AI
+* Keegan Miller | AIE | Tic Tac Toe
+***********/
+
 #pragma once
 #include <string>
 class Player

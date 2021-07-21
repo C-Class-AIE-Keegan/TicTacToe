@@ -1,6 +1,7 @@
 #pragma once
 /*
  * Game Manager HEADER
+ * Handles & runs the entire game
  * Keegan Miller AIE | TIC TAC TOE
 */
 #include "GameState.h"

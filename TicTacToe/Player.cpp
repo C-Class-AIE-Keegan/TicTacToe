@@ -1,3 +1,8 @@
+/**********
+* Player CPP
+* Contains a method to draw the UI for all players
+* Keegan Miller | AIE | Tic Tac Toe
+***********/
 #include "Player.h"
 #include <iostream>
 
