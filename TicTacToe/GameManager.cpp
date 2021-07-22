@@ -10,10 +10,19 @@
 // Static Variables declaretion
 GameState* GameManager::currentGameState = new InGame();
 MatchController* GameManager::currentMatch = nullptr;
+bool GameManager::gameRunning = true;
 
 GameManager::~GameManager()
 {
 	delete GameManager::currentGameState;
+}
+
+void GameManager::Loop()
+{
+	while (gameRunning)
+	{
+		currentGameState->Loop();
+	}
 }
 
 /// <summary>

@@ -154,6 +154,7 @@
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="InGame.cpp" />
+    <ClCompile Include="MatchController.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="TicTacToe.cpp" />
   </ItemGroup>
@@ -162,6 +163,7 @@
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Human.h" />
     <ClInclude Include="InGame.h" />
+    <ClInclude Include="MatchController.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

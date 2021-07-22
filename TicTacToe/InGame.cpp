@@ -40,6 +40,17 @@ void InGame::Draw()
 void InGame::Loop()
 {
 	__super::Loop();
+
+	// Players Turn
+	if (playersTurn == 1)
+	{
+		GameManager::GetCurrentMatch()->GetPlayer1()->TakeTurn();
+		
+	}
+	else
+	{
+		GameManager::GetCurrentMatch()->GetPlayer2()->TakeTurn();
+	}
 }
 
 /// <summary>

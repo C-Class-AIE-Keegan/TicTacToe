@@ -2,11 +2,10 @@
 //
 
 #include <iostream>
-#include "Human.h"
+#include "GameManager.h"
 
 int main()
 {
-	Human *human = new Human("Hello", "X");
-	human->TakeTurn();
+	GameManager::Loop();
 }
 
